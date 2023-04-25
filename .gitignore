@@ -8,8 +8,6 @@ example/studies/**/modeling
 .python-version
 .venv
 
-# Dependencies
-Brewfile.lock.json
 
 # General ignores for macOS
 .DS_Store
