@@ -1,15 +1,12 @@
 [tool.poetry]
 name = "autora-theorist-template"
 version = "0.0.0"
-description = "Autonomous Research Assistant (AutoRA) is a framework for automating steps of the empirical research process. This framework implements tools for autonomously and iteratively generating 1) new theories to describe real-world data, and 2) experiments to invalidate those theories and seed a new cycle of theory-making. The experiments will be run online via crowd-sourcing platforms (MTurk, Prolific)."
-authors = [
-    "Sebastian Musslick <sebastian_musslick@brown.edu>",
-    "John Gerrard Holland <john_holland1@brown.edu>",
-]
+description = "AutoRA Theorist Template"
+authors = []
 readme = "README.md"
 license = "MIT"
-homepage = "https://musslick.github.io/AER_website/Research.html"
-repository = "https://github.com/AutoResearch/autora"
+homepage = "https://www.empiricalresearch.ai"
+repository = "https://github.com/AutoResearch/autora-theorist-template"
 documentation = "https://autoresearch.github.io/autora/"
 
 [tool.poetry.dependencies]
