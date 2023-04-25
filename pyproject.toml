@@ -4,37 +4,41 @@ version = "0.0.0"
 description = "AutoRA Theorist Template"
 authors = []
 readme = "README.md"
-license = "MIT"
+license = {text = "MIT License"}
 requires-python = ">=3.8.10,<3.11"
-urls = [
-    {homepage = "https://www.empiricalresearch.ai"},
-    {repository = "https://github.com/AutoResearch/autora-theorist-template"},
-    {documentation = "https://autoresearch.github.io/autora/"}
-    ]
+
 
 dependencies = [
 "autora-core",
-    {scikit-learn = "^1.1.1"},
+    "scikit-learn",
 ]
 
 
-[tool.poetry.group.dev.dependencies]
-jupyter = "^1.0.0"
-ipython = "^8.4.0"
-ipywidgets = ">=7.7.1,<9.0.0"
-flake8 = "^6.0.0"
-pytest = "^7.2.0"
-pre-commit = ">=2.20,<4.0"
-mkdocs-material = ">=8.5.10,<10.0.0"
-mkdocs-gen-files = ">=0.3.4,<0.5.0"
-mkdocs-literate-nav = ">=0.4.1,<0.7.0"
-mkdocs-section-index = "^0.3.4"
-mkdocstrings-python = ">=0.7.1,<0.10.0"
-mkdocs-jupyter = "^0.24.1"
+[project.optional-dependencies]
+dev = [
+    "jupyter",
+    "ipython",
+    "ipywidgets",
+    "flake8",
+    "pytest",
+    "pre-commit",
+    "mkdocs-material",
+    "mkdocs-gen-files",
+    "mkdocs-literate-nav",
+    "mkdocs-section-index",
+    "mkdocstrings-python",
+    "mkdocs-jupyter",
+]
 
-[build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+[project.urls]
+homepage = "https://www.empiricalresearch.ai"
+repository = "https://github.com/AutoResearch/autora-theorist-template"
+documentation = "https://autoresearch.github.io/autora/"
 
-[tool.isort]
-profile = "black"
+
+#[build-system]
+#requires = ["poetry-core>=1.0.0"]
+#build-backend = "poetry.core.masonry.api"
+
+#[tool.isort]
+#profile = "black"
