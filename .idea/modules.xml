@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/autora-template.iml" filepath="$PROJECT_DIR$/.idea/autora-template.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../autora-theorist-template/.idea/autora-theorist-template.iml" filepath="$PROJECT_DIR$/../autora-theorist-template/.idea/autora-theorist-template.iml" />
     </modules>
   </component>
 </project>
