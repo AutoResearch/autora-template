@@ -6,7 +6,7 @@ repo_url: 'https://github.com/autoresearch/autora'
 theme:
   name: material
 
-watch: ["src", "mkdocs"]
+  "src", 
 
 plugins:
   gen-files:
