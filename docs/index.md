@@ -1,4 +1,4 @@
-# Template Theorist Package
+# Introduction
 
 
 Include inline mathematics like this: \(3 < 4\)
