@@ -3,6 +3,7 @@ name: Test Setuptools Build
 on:
   pull_request:
   merge_group:
+  workflow_dispatch:
 
 jobs:
   build-poetry:
