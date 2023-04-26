@@ -1,5 +1,5 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
-INHERIT: mkdocs/base.yml
+INHERIT: mkdocs/base.yml  # use the shared AutoRA configuration by default
 
 site_name: AutoRA Theorist Template
 repo_url: 'https://github.com/autoresearch/autora-theorist-template'
@@ -7,4 +7,4 @@ repo_url: 'https://github.com/autoresearch/autora-theorist-template'
 nav:
 - 'index.md'
 - 'example.ipynb'
-- Code Reference: reference/src/autora/
+- Code Reference: reference/

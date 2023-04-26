@@ -13,9 +13,7 @@ dependencies = [
     "scikit-learn",
 ]
 
-
 [project.optional-dependencies]
-
 dev = [
     #"autora-core[dev]",
     "build",
