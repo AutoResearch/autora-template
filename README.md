@@ -1,10 +1,8 @@
 # AutoRA Theorist Template
 
-## How to Develop
+## Quickstart Guide
 
-Install this in an environment using your chosen package manager. 
-
-### Using `virtualenv`
+Install this in an environment using your chosen package manager. In this example we are using virtualenv
 
 Install:
 - python: https://www.python.org/downloads/
@@ -25,6 +23,21 @@ Use `pip install` to install the current project (`"."`) in editable mode (`-e`)
 pip install -e ".[dev]"
 ```
 
+## Add new dependencies 
+
+In pyproject.toml add the new dependencies under `dependencies`
+
+Install the added dependencies
+```shell
+pip install -e ".[dev]"
+```
+
+## Publishing the package
+
+Update the meta data under `project` in the pyproject.toml file to include name, description, author-name, author-email and version
+
+- Follow the guide here: https://packaging.python.org/en/latest/tutorials/packaging-projects/
+
 Build the package using:
 ```shell
 python -m build
@@ -32,7 +45,7 @@ python -m build
 
 Publish the package to PyPI using `twine`:
 ```shell
-twine upload dist/* 
+twine upload dist/*
 ```
 
 ## Workflows
