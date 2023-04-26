@@ -1,4 +1,4 @@
-name: Test Poetry Build
+name: Test Setuptools Build
 
 on:
   pull_request:
@@ -9,16 +9,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      
-      - run: pipx install poetry
 
       - uses: actions/setup-python@v4
         with:
           python-version: 3.8
-          cache: 'poetry'
+          cache: 'pip'
 
       - name: Install dependencies
-        run: poetry install
+        run: pip install ".[dev]"
 
       - name: Build package
-        run: poetry build
+        run: python -m build
