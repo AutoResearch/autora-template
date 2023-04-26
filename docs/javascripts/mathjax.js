@@ -1,3 +1,4 @@
+// required for equation display in documentation
 window.MathJax = {
     tex: {
       inlineMath: [ ["\\(","\\)"] ],
