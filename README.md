@@ -23,6 +23,8 @@ Use `pip install` to install the current project (`"."`) in editable mode (`-e`)
 pip install -e ".[dev]"
 ```
 
+add your code to the src/autora/theorist/your_theorist_name/
+
 ## Add new dependencies 
 
 In pyproject.toml add the new dependencies under `dependencies`
