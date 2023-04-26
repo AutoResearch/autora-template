@@ -6,12 +6,6 @@ repo_url: 'https://github.com/autoresearch/autora'
 theme:
   name: material
 
-watch: [
-  "src", 
-  "mkdocs",
-  "docs",
-]
-
 plugins:
   gen-files:
     scripts: [ "mkdocs/gen_ref_pages.py" ]
@@ -32,7 +26,9 @@ markdown_extensions:
     generic: true
 
 extra_javascript: [ 
-  "javascripts/mathjax.js",                                 # required for pymdownx.arithmetex
-  "https://polyfill.io/v3/polyfill.min.js?features=es6",    # required for pymdownx.arithmetex
-  "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" # required for pymdownx.arithmetex
+  # requirements for pymdownx.arithmetex:
+  "javascripts/mathjax.js",                                 
+  "https://polyfill.io/v3/polyfill.min.js?features=es6", 
+  "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
+
 ]
