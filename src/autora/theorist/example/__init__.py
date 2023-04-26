@@ -6,12 +6,12 @@ from sklearn.base import BaseEstimator
 
 class ExampleRegressor(BaseEstimator):
     """
-    Include inline mathematics in docstring \\\\(x < 1\\\\) or $c = 3$
+    Include inline mathematics in docstring \\(x < 1\\) or $c = 3$
     or block mathematics:
     
-    \\\\[
+    \\[
         x + 1 = 3
-    \\\\]
+    \\]
 
 
     $$  

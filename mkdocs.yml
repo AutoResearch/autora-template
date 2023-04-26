@@ -1,8 +1,10 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 INHERIT: mkdocs/base.yml
+
 repo_url: 'https://github.com/autoresearch/autora-theorist-template'
 
 nav:
 - 'index.md'
 - 'example.ipynb'
 - Code Reference: reference/src/autora/
+- reference/SUMMARY.md
