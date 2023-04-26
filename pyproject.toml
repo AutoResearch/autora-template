@@ -1,21 +1,25 @@
 [project]
 name = "autora-theorist-template"
-version = "0.0.0"
 description = "AutoRA Theorist Template"
 authors = []
 readme = "README.md"
 license = {text = "MIT License"}
 requires-python = ">=3.8.10,<3.11"
+dynamic = ["version"]
 
 
 dependencies = [
-"autora-core",
+    "autora-core",
     "scikit-learn",
 ]
 
 
 [project.optional-dependencies]
+
 dev = [
+    #"autora-core[dev]",
+    "build",
+    "twine",
     "jupyter",
     "ipython",
     "ipywidgets",
@@ -36,9 +40,8 @@ repository = "https://github.com/AutoResearch/autora-theorist-template"
 documentation = "https://autoresearch.github.io/autora/"
 
 
-#[build-system]
-#requires = ["poetry-core>=1.0.0"]
-#build-backend = "poetry.core.masonry.api"
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
 
-#[tool.isort]
-#profile = "black"
+[tool.setuptools_scm]
