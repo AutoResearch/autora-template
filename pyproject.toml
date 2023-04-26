@@ -15,22 +15,7 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = [
-    #"autora-core[dev]",
-    "build",
-    "twine",
-    "jupyter",
-    "ipython",
-    "ipywidgets",
-    "flake8",
-    "pytest",
-    "pre-commit",
-    "mkdocs-material",
-    "mkdocs-gen-files",
-    "mkdocs-literate-nav",
-    "mkdocs-section-index",
-    "mkdocstrings-python",
-    "mkdocs-jupyter",
-    "pymdown-extensions",
+    "autora-core[dev]"
 ]
 
 [project.urls]
