@@ -9,10 +9,6 @@ theme:
 watch:
   - src
 
-markdown_extensions:
-  - pymdownx.arithmatex:
-      generic: false
-
 plugins:
   - search
   - gen-files:
@@ -26,10 +22,10 @@ plugins:
         python:
           import:
             - https://scikit-learn.org/stable/objects.inv
-  - mkdocs-jupyter:
+  - mkdocs-jupyter:  # required to convert Jupyter notebooks
       include_source: true
       execute: false
-      ignore_h1_titles: True
+      ignore_h1_titles: true
 
 
 markdown_extensions:
@@ -37,7 +33,7 @@ markdown_extensions:
       generic: true
 
 extra_javascript:
-  - mathjax.js
+  - javascripts/mathjax.js  # required for pymdownx.arithmetex
   - https://polyfill.io/v3/polyfill.min.js?features=es6  # required for pymdownx.arithmetex
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js  # required for pymdownx.arithmetex
 
