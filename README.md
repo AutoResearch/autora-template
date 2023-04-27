@@ -5,7 +5,7 @@
 Install this in an environment using your chosen package manager. In this example we are using virtualenv
 
 Install:
-- python: https://www.python.org/downloads/
+- python (3.8 or greater): https://www.python.org/downloads/
 - virtualenv: https://virtualenv.pypa.io/en/latest/installation.html
 
 Create a new virtual environment:
