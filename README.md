@@ -4,13 +4,17 @@
 
 Install this in an environment using your chosen package manager. In this example we are using virtualenv
 
+Lookup the appropriate python version for development in the meta field of the autora-core package here:
+https://pypi.org/project/autora-core/
+
 Install:
 - python: https://www.python.org/downloads/
 - virtualenv: https://virtualenv.pypa.io/en/latest/installation.html
 
-Create a new virtual environment:
+
+Create a new virtual environment using the appropriate python version (replace the placeholder:
 ```shell
-virtualenv venv
+virtualenv venv -p {{ python_version }}
 ```
 
 Activate it:
