@@ -23,7 +23,18 @@ Use `pip install` to install the current project (`"."`) in editable mode (`-e`)
 pip install -e ".[dev]"
 ```
 
-add your code to the src/autora/theorist/your_theorist_name/
+## Add your contribution 
+Your autora-subpackage should include (1) your code implementing the desired **theorist**, 
+(2) **unit tests** for this theorist, and (3) respective **documentation**. 
+
+### Adding the theorist
+Add your code to the `src/autora/theorist/your_theorist_name/`
+
+### Adding unit tests
+You may also add tests to `tests/test_theorist_your_theorist_name.py`
+
+### Adding documentation
+You may document your theorist in `docs/index.md`
 
 ## Add new dependencies 
 
