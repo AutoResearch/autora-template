@@ -31,7 +31,7 @@ Examples:
     ...
     ...     x = IV(name="x", value_range=(-6 * np.pi, 6 * np.pi))
     ...     y = DV(name="y", value_range=(-1, 1))
-    ...     metadata = VariableCollection(independent_variables=[x], dependent_variables=[y])
+    ...     variables = VariableCollection(independent_variables=[x], dependent_variables=[y])
     ...
     ...     def domain():
     ...         return np.linspace(*x.value_range, resolution).reshape(-1, 1)
@@ -51,7 +51,7 @@ Examples:
     ...     collection = SyntheticExperimentCollection(
     ...         name=name,
     ...         params=params,
-    ...         metadata=metadata,
+    ...         variables=variables,
     ...         domain=domain,
     ...         experiment_runner=experiment_runner,
     ...         ground_truth=ground_truth,
@@ -126,7 +126,7 @@ class SyntheticExperimentCollection:
     Attributes:
         name: the name of the theory
         params: a dictionary with the settable parameters of the model and their respective values
-        metadata: a VariableCollection describing the variables of the model
+        variables: a VariableCollection describing the variables of the model
         domain: a function which returns all the available X values for the model
         experiment_runner: a function which takes X values and returns simulated y values **with
             statistical noise**
@@ -138,7 +138,7 @@ class SyntheticExperimentCollection:
 
     name: Optional[str] = None
     params: Optional[Dict] = None
-    metadata: Optional[VariableCollection] = None
+    variables: Optional[VariableCollection] = None
     domain: Optional[Callable] = None
     experiment_runner: Optional[Callable] = None
     ground_truth: Optional[Callable] = None
@@ -168,7 +168,7 @@ def retrieve(id_: str, **kwargs) -> SyntheticExperimentCollection:
 
     Parameters:
         id_: the unique id for the model
-        **kwargs: keyword arguments for the synthetic experiment (metadata, coefficients etc.)
+        **kwargs: keyword arguments for the synthetic experiment (variables, coefficients etc.)
     Returns:
         the synthetic experiment
     """

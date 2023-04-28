@@ -18,8 +18,8 @@ Examples:
     >>> s.name
     'Weber-Fechner Law'
 
-    ... a valid metadata description:
-    >>> s.metadata  # doctest: +ELLIPSIS
+    ... a valid variables description:
+    >>> s.variables  # doctest: +ELLIPSIS
     VariableCollection(...)
 
     ... a function to generate the full domain of the data (if possible)
@@ -49,28 +49,6 @@ Examples:
     >>> s.plotter(model)
     >>> plt.show()  # doctest: +SKIP
 
-
-    These can be used to run a full experimental cycle
-    >>> from autora.experimentalist.pipeline import make_pipeline
-    >>> from autora.experimentalist.pooler.grid import grid_pool
-    >>> from autora.experimentalist.sampler.random_sampler import random_sampler
-    >>> from functools import partial
-    >>> import random
-    >>> metadata = s.metadata
-    >>> pool = partial(grid_pool, ivs=metadata.independent_variables)
-    >>> random.seed(181) # set the seed for the random sampler
-    >>> sampler = partial(random_sampler, n=20)
-    >>> experimentalist_pipeline = make_pipeline([pool, sampler])
-
-    >>> from autora.cycle import Cycle
-    >>> theorist = LinearRegression()
-
-    >>> cycle = Cycle(metadata=metadata, experimentalist=experimentalist_pipeline,
-    ...               experiment_runner=s.experiment_runner, theorist=theorist)
-
-    >>> c = cycle.run(10)
-    >>> c.data.theories[-1].coef_   # doctest: +ELLIPSIS
-    array([-0.53610647,  0.58457307])
 """
 
 from autora.synthetic import data
