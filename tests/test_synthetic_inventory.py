@@ -11,11 +11,11 @@ def test_model_registration_retrieval():
 
     # We can register another model and retrieve it as well
     autora.synthetic.register(
-        "only_variables",
-        lambda: SyntheticExperimentCollection(variables=VariableCollection()),
+        "only_metadata",
+        lambda: SyntheticExperimentCollection(metadata=VariableCollection()),
     )
-    only_variables = autora.synthetic.retrieve("only_variables")
-    assert only_variables.variables is not None
+    only_metadata = autora.synthetic.retrieve("only_metadata")
+    assert only_metadata.metadata is not None
 
     # We can still retrieve the first model, and it is equal to the first version
     empty_copy = autora.synthetic.retrieve("empty")

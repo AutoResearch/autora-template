@@ -7,7 +7,7 @@ from autora.variable import DV, IV, ValueType, VariableCollection
 from ..inventory import SyntheticExperimentCollection, register
 
 
-def get_variables(minimum_value, maximum_value, resolution):
+def get_metadata(minimum_value, maximum_value, resolution):
     v_a = IV(
         name="V_A",
         allowed_values=np.linspace(
@@ -60,11 +60,11 @@ def get_variables(minimum_value, maximum_value, resolution):
         type=ValueType.PROBABILITY,
     )
 
-    variables_ = VariableCollection(
+    metadata_ = VariableCollection(
         independent_variables=[v_a, p_a, v_b, p_b],
         dependent_variables=[dv1],
     )
-    return variables_
+    return metadata_
 
 
 def expected_value_theory(
@@ -89,7 +89,7 @@ def expected_value_theory(
         random_number_generator=rng,
     )
 
-    variables = get_variables(
+    metadata = get_metadata(
         minimum_value=minimum_value, maximum_value=maximum_value, resolution=resolution
     )
 
@@ -120,7 +120,7 @@ def expected_value_theory(
 
     def domain():
         X = np.array(
-            np.meshgrid([x.allowed_values for x in variables.independent_variables])
+            np.meshgrid([x.allowed_values for x in metadata.independent_variables])
         ).T.reshape(-1, 4)
         return X
 
@@ -156,7 +156,7 @@ def expected_value_theory(
                     linestyle="--",
                 )
 
-        x_limit = [0, variables.independent_variables[1].value_range[1]]
+        x_limit = [0, metadata.independent_variables[1].value_range[1]]
         y_limit = [0, 1]
         x_label = "Probability of Choosing Option A"
         y_label = "Probability of Obtaining V(A)"
@@ -170,7 +170,7 @@ def expected_value_theory(
 
     collection = SyntheticExperimentCollection(
         name=name,
-        variables=variables,
+        metadata=metadata,
         experiment_runner=experiment_runner,
         ground_truth=ground_truth,
         domain=domain,

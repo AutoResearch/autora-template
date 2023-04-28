@@ -67,7 +67,7 @@ def weber_fechner_law(
         type=ValueType.REAL,
     )
 
-    variables = VariableCollection(
+    metadata = VariableCollection(
         independent_variables=[iv1, iv2],
         dependent_variables=[dv1],
     )
@@ -89,8 +89,8 @@ def weber_fechner_law(
     ground_truth = partial(experiment_runner, std=0.0)
 
     def domain():
-        s1_values = variables.independent_variables[0].allowed_values
-        s2_values = variables.independent_variables[1].allowed_values
+        s1_values = metadata.independent_variables[0].allowed_values
+        s2_values = metadata.independent_variables[1].allowed_values
         X = np.array(np.meshgrid(s1_values, s2_values)).T.reshape(-1, 2)
         # remove all combinations where s1 > s2
         X = X[X[:, 0] <= X[:, 1]]
@@ -129,7 +129,7 @@ def weber_fechner_law(
                     linestyle="--",
                 )
 
-        x_limit = [0, variables.independent_variables[0].value_range[1]]
+        x_limit = [0, metadata.independent_variables[0].value_range[1]]
         y_limit = [0, 2]
         x_label = r"Stimulus Intensity Difference $\Delta S = S_1 - S_0$"
         y_label = "Perceived Intensity of Stimulus $S_1$"
@@ -143,7 +143,7 @@ def weber_fechner_law(
 
     collection = SyntheticExperimentCollection(
         name=name,
-        variables=variables,
+        metadata=metadata,
         experiment_runner=experiment_runner,
         ground_truth=ground_truth,
         domain=domain,

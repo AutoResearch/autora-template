@@ -3,7 +3,7 @@ from functools import partial
 import numpy as np
 
 from ..inventory import SyntheticExperimentCollection, register
-from .expected_value import get_variables
+from .expected_value import get_metadata
 
 
 def prospect_theory(
@@ -56,7 +56,7 @@ def prospect_theory(
         name=name,
     )
 
-    variables = get_variables(
+    metadata = get_metadata(
         minimum_value=minimum_value, maximum_value=maximum_value, resolution=resolution
     )
 
@@ -129,10 +129,10 @@ def prospect_theory(
     ground_truth = partial(experiment_runner, added_noise_=0.0)
 
     def domain():
-        v_a = variables.independent_variables[0].allowed_values
-        p_a = variables.independent_variables[1].allowed_values
-        v_b = variables.independent_variables[2].allowed_values
-        p_b = variables.independent_variables[3].allowed_values
+        v_a = metadata.independent_variables[0].allowed_values
+        p_a = metadata.independent_variables[1].allowed_values
+        v_b = metadata.independent_variables[2].allowed_values
+        p_b = metadata.independent_variables[3].allowed_values
 
         X = np.array(np.meshgrid(v_a, p_a, v_b, p_b)).T.reshape(-1, 4)
         return X
@@ -170,7 +170,7 @@ def prospect_theory(
                     linestyle="--",
                 )
 
-        x_limit = [0, variables.independent_variables[1].value_range[1]]
+        x_limit = [0, metadata.independent_variables[1].value_range[1]]
         y_limit = [0, 1]
         x_label = "Probability of Choosing Option A"
         y_label = "Probability of Obtaining V(A)"
@@ -185,7 +185,7 @@ def prospect_theory(
     collection = SyntheticExperimentCollection(
         name=name,
         params=params,
-        variables=variables,
+        metadata=metadata,
         domain=domain,
         experiment_runner=experiment_runner,
         ground_truth=ground_truth,
