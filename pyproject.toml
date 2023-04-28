@@ -1,11 +1,13 @@
 [project]
-name = "autora-synthetic-data"
-description = "AutoRA Synthetic Data"
-authors = []
-dynamic = ["version"]
+# UPDATE THIS BEFORE PUBLISHING
+name = "autora-theorist-template"
+description = "AutoRA Theorist Template"
+authors = [{ name = "Max Mustermann", email = "max@mustermann.de" }]
+version = "0.1.0"
 
 readme = "README.md"
 license = { text = "MIT License" }
+requires-python = ">=3.8,<4"
 
 # ADD NEW DEPENDENCIES HERE
 dependencies = [
@@ -24,7 +26,5 @@ repository = "https://github.com/AutoResearch/autora-theorist-template"
 documentation = "https://autoresearch.github.io/autora/"
 
 [build-system]
-requires = ["setuptools", "setuptools_scm"]
+requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
-
-[tool.setuptools_scm]
