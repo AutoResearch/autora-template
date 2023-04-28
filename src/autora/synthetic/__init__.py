@@ -46,8 +46,8 @@ Examples:
 
     These can be used to run a full experimental cycle
     >>> from autora.experimentalist.pipeline import make_pipeline
-    >>> from autora.experimentalist.pooler.grid import grid_pool
-    >>> from autora.experimentalist.sampler.random_sampler import random_sampler
+    >>> from autora.experimentalist.pooler.general_pool import grid_pool
+    >>> from autora.experimentalist.sampler.random import random_sampler
     >>> from functools import partial
     >>> import random
     >>> metadata = s.metadata
