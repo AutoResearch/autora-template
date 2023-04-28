@@ -15,8 +15,7 @@ def weber_fechner_law(
     added_noise=0.01,
     rng=np.random.default_rng(),
 ):
-    """
-    Weber-Fechner Law
+    """Weber-Fechner Law.
 
     Args:
         name: name of the experiment
@@ -25,6 +24,8 @@ def weber_fechner_law(
         maximum_stimulus_intensity: maximum value for stimulus 1 and 2
         added_noise: standard deviation of normally distributed noise added to y-values
         rng: `np.random` random number generator to use for generating noise
+
+    Returns:
 
     """
 
@@ -153,5 +154,4 @@ def weber_fechner_law(
     return collection
 
 
-register("weber-fechner", weber_fechner_law)  # todo: make a better interface for multiple aliases
 register("weber_fechner", weber_fechner_law)
