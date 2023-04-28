@@ -1,4 +1,4 @@
-# Your Theorist Name
+# Synthetic Data
 
 
 Include inline mathematics like this: \(3 < 4\)
