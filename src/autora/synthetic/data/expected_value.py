@@ -167,7 +167,6 @@ def expected_value_theory(
         plt.ylabel(y_label, fontsize="large")
         plt.legend(loc=2, fontsize="medium")
         plt.title(name, fontsize="x-large")
-        plt.show()
 
     collection = SyntheticExperimentCollection(
         name=name,

@@ -2,10 +2,12 @@
 Provides an interface for loading and saving synthetic experiments.
 
 Examples:
-    The registry is accessed using the `retrieve` function, optionally setting parameters:
     >>> from autora.synthetic import retrieve, describe
     >>> import numpy as np
-    >>> s = retrieve("weber_fechner",rng=np.random.default_rng(seed=180))  # the Weber-Fechner Law
+    >>> import matplotlib.pyplot as plt
+    The registry is accessed using the `retrieve` function, optionally setting parameters. Here
+    we load the Weber-Fechner law:
+    >>> s = retrieve("weber_fechner", rng=np.random.default_rng(seed=180))
 
     Use the describe function to give information about the synthetic experiment:
     >>> describe(s) # doctest: +ELLIPSIS +NORMALIZE_WHITESPACE
@@ -38,11 +40,14 @@ Examples:
 
     ... a function to plot the ground truth:
     >>> s.plotter()
+    >>> plt.show()  # doctest: +SKIP
 
     ... against a fitted model if it exists:
     >>> from sklearn.linear_model import LinearRegression
     >>> model = LinearRegression().fit(x, y)
     >>> s.plotter(model)
+    >>> plt.show()  # doctest: +SKIP
+
 
     These can be used to run a full experimental cycle
     >>> from autora.experimentalist.pipeline import make_pipeline

@@ -141,7 +141,6 @@ def weber_fechner_law(
         plt.ylabel(y_label, fontsize="large")
         plt.legend(loc=2, fontsize="medium")
         plt.title("Weber-Fechner Law", fontsize="x-large")
-        plt.show()
 
     collection = SyntheticExperimentCollection(
         name=name,
