@@ -10,16 +10,12 @@ license = { text = "MIT License" }
 # ADD NEW DEPENDENCIES HERE
 dependencies = [
     "autora-core",
+    "scikit-learn",
 ]
 
 [project.optional-dependencies]
 dev = [
-    "autora-core[dev]",
-    "autora-synthetic-data[docs]"
-]
-docs = [
-    "autora-workflow",
-    "scikit-learn",
+    "autora-core[dev]"
 ]
 
 [project.urls]
