@@ -5,6 +5,7 @@ Examples:
     >>> from autora.synthetic import retrieve, describe
     >>> import numpy as np
     >>> import matplotlib.pyplot as plt
+
     The registry is accessed using the `retrieve` function, optionally setting parameters. Here
     we load the Weber-Fechner law:
     >>> s = retrieve("weber_fechner", rng=np.random.default_rng(seed=180))
