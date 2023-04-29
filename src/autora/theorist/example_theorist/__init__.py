@@ -8,17 +8,18 @@ class ExampleRegressor(BaseEstimator):
     """
     Include inline mathematics in docstring \\(x < 1\\) or $c = 3$
     or block mathematics:
-    
+
     \\[
         x + 1 = 3
     \\]
 
 
-    $$  
-    y + 1 = 4 
+    $$
+    y + 1 = 4
     $$
 
     """
+
     def __init__(self):
         pass
 
@@ -27,4 +28,3 @@ class ExampleRegressor(BaseEstimator):
 
     def predict(self, x):
         pass
-
