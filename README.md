@@ -1,4 +1,4 @@
-# AutoRA Theorist Template
+# AutoRA Template
 
 ## Quickstart Guide
 
@@ -24,17 +24,18 @@ pip install -e ".[dev]"
 ```
 
 ## Add your contribution 
-Your autora-subpackage should include (1) your code implementing the desired **theorist**, 
-(2) **unit tests** for this theorist, and (3) respective **documentation**. 
+Your autora-subpackage should include (1) your code implementing in the respective folder of src/autora/*, 
+(2) **unit tests** for your contribution in the tests folder, and (3) respective **documentation**. (4) Update the README.md file
+(5) Delete all folders in src/autora that don't contain your contribution
 
-### Adding the theorist
-Add your code to the `src/autora/theorist/your_theorist_name/`
+### Adding your code implementation
+Add your code implementation to the respective folder of src/autora/*, you can create new categories if none of them seems fitting
 
 ### Adding unit tests
-You may also add tests to `tests/test_theorist_your_theorist_name.py`
+You may also add tests to `tests/test_your_contribution_name.py`
 
 ### Adding documentation
-You may document your theorist in `docs/index.md`
+You may document your contribution in `docs/index.md`
 
 ## Add new dependencies 
 
@@ -47,7 +48,7 @@ pip install -e ".[dev]"
 
 ## Publishing the package
 
-Update the meta data under `project` in the pyproject.toml file to include name, description, author-name, author-email and version
+Update the metadata under `project` in the pyproject.toml file to include name, description, author-name, author-email and version. Also update the urls in the `project.urls` section. 
 
 - Follow the guide here: https://packaging.python.org/en/latest/tutorials/packaging-projects/
 
