@@ -48,7 +48,8 @@ pip install -e ".[dev]"
 
 ## Publishing the package
 
-Update the metadata under `project` in the pyproject.toml file to include name, description, author-name, author-email and version. Also update the urls in the `project.urls` section. 
+Update the meta data under `project` in the pyproject.toml file to include name, description, author-name, author-email and version.
+Also, update the URL for the repository under `project.urls`.
 
 - Follow the guide here: https://packaging.python.org/en/latest/tutorials/packaging-projects/
 
