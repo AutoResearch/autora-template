@@ -29,10 +29,10 @@ Your autora-subpackage should include (1) your code implementing in the respecti
 (5) Delete all folders in src/autora that don't contain your contribution
 
 ### Adding your code implementation
-Add your code implementation to the respective folder of src/autora/*, you can create new categories if none of them seems fitting
+Add your code implementation to src/autora/theorist, src/autora/experimentalist or src/autora/experiment_runner. You can create new categories if none of them seems fitting.
 
-### Adding unit tests
-You may also add tests to `tests/test_your_contribution_name.py`
+### Adding tests
+You should also add tests. These can be [doctests](https://docs.python.org/3/library/doctest.html) or as test cases in `tests/test_your_contribution_name.py`. 
 
 ### Adding documentation
 You may document your contribution in `docs/index.md`
