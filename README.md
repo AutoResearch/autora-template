@@ -35,7 +35,8 @@ Add your code implementation to src/autora/theorist, src/autora/experimentalist 
 You should also add tests. These can be [doctests](https://docs.python.org/3/library/doctest.html) or as test cases in `tests/test_your_contribution_name.py`. 
 
 ### Adding documentation
-You may document your contribution in `docs/index.md`
+- You may document your contribution in `docs/index.md`. You can also add new pages in the `docs` folder
+- Update the `mkdocs.yml` file to reflect structure of the documentation. For example, you can add new pages or delete pages that you deleted from the `docs` folder.
 
 ## Add new dependencies 
 
