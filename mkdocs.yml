@@ -5,5 +5,8 @@ site_name: AutoRA Template
 repo_url: 'https://github.com/autoresearch/autora-template'
 
 nav:
-- 'index.md'
-- 'example.ipynb'
+- Home: 'index.md'
+- Quickstart: 'quick_start_guide.md'
+- Examples:
+  - Basic Usage: 'basic_usage.ipynb'
+  - Additional Example: 'additional_example.ipynb'

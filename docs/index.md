@@ -1,7 +1,8 @@
-# Your Theorist Name
+# Name-Of-Your-Contribution (don't include AutoRA here)
 
+Explain what your contribution is doing here
 
-Include inline mathematics like this: \(3 < 4\)
+You can include inline mathematics like this: \(3 < 4\)
 
 Include block mathematics like this (don't forget the empty lines above and below the block):
 
