@@ -12,6 +12,8 @@ Create a new virtual environment:
 ```shell
 virtualenv venv
 ```
+*Note: You want to ensure that the python version matches that of autora. If necessary 
+you can specify the respective python version directly, e.g., ``virtualenv venv --python=python3.9``*
 
 Activate it:
 ```shell
