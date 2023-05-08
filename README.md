@@ -170,7 +170,7 @@ twine upload dist/*
 ```
 
 
-#### Step 7.3 (Optional):   Dynamic versioning
+#### Step 7.3 (Optional):   Dynamic Versioning
 To automatically generate the version number for each release, you can use dynamic versioning instead of updating the version number manually. To set this up, you need to alter the `pyproject.toml` file:
 - Replace `version = "..."` with `dynamic = ["version"]` under `project`
 - Replace the `build-system` section with the following:
@@ -183,11 +183,11 @@ build-backend = "setuptools.build_meta"
 ```toml
 [tool.setuptools_scm]
 ```
-#### Dynamic versioning: Publishing via GitHub actions
+#### Dynamic Versioning: Publishing via GitHub Actions
 You can use dynamic versioning with the GitHub action described in the previous section. The workflow remains the same, 
 but you don't have to update the version in the `pyproject.toml` file.
 
-#### Dynamic versioning: Publishing using `twine`
+#### Dynamic Versioning: Publishing Using `twine`
 If you are using dynamic versioning with Twine, follow these steps to publish your package:
 - Commit all of your changes.
 - Tag the commit: Create an annotated Git tag at the commit you want to release. This is typically the most recent 
