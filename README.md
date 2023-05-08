@@ -35,7 +35,7 @@ Contribution Guide).*
 
 First you have to choose **which type of feature** you would like to add to AutoRA. There are four categories of contributions:<br>
 
-(1)  **Theorist**: An sklearn regressors that returns an interpretable model relating experiment conditions $X$ to 
+(1)  **Theorist**: An sklearn regressor that returns an interpretable model relating experiment conditions $X$ to 
 observables $Y$.<br>
 *Example: The [Bayesian Machine Scientist](https://github.com/AutoResearch/autora-theorist-bms) (Guimerà et al., 2020, 
 in Science Advances) returns an equation governing the relationship between $X$ and $Y$.* <br>
@@ -85,7 +85,7 @@ except for
 
 ### Step 3: Implement Your Code
 
-You may now add you a folder in the respective feature category. For instance, if you would like to implement
+You may now add a folder in the respective feature category. For instance, if you would like to implement
 and experimentalist sampler, then you may rename the subfolder ``example_sampler`` in 
 ``src/autora/experimentalist/sampler/`` and add your implementation of the sampler in the ``__init__.py`` file. You may 
 also add additional files in this folder. Just make sure to import the core function or class of your feature
@@ -124,7 +124,7 @@ pip install -e ".[dev]"
 
 ### Step 7: Publish Your Package
 
-Once your project is implemented, you may publish it as subpackage of AutoRA. No worries though, in case you are 
+Once your project is implemented, you may publish it as subpackage of AutoRA. If you have not thoroughly vetted your project or would otherwise like to refine it further, you may 
 nervous about the state of your package–you will be able to publish it as a pre-release, indicating to users that
 the package is still in progress.
 
@@ -170,7 +170,7 @@ twine upload dist/*
 ```
 
 
-#### Step 7.3 (Optional):   Dynamic Versioning
+#### Step 7.3 (Optional): Dynamic Versioning
 To automatically generate the version number for each release, you can use dynamic versioning instead of updating the version number manually. To set this up, you need to alter the `pyproject.toml` file:
 - Replace `version = "..."` with `dynamic = ["version"]` under `project`
 - Replace the `build-system` section with the following:
