@@ -1,9 +1,15 @@
+import numpy as np
+
+"""
+Example Experimentalist Sampler
+"""
 def example_pool(argument: float) -> float:
     """
     Add a description of the pooler here
+
     Args:
         argument: description of the argument
-    Returns: description of the argument
+    Returns: pool of conditions
 
     *Optional*
     Examples:
@@ -11,4 +17,6 @@ def example_pool(argument: float) -> float:
         >>> example_pool(1.)
         1.0
     """
-    return argument
+    new_conditions = argument
+
+    return new_conditions
