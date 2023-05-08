@@ -1,10 +1,19 @@
-def example_sampler(pool: enumerate):
+"""
+Example Experimentalist Sampler
+"""
+import numpy as np
+
+def example_sampler(
+    condition_pool: np.ndarray, num_samples: int = 1) -> np.ndarray:
     """
     Add a description of the sampler here.
-    Returns the first argument of an enumerate
+
     Args:
-        pool: description of the argument
-    Returns: first element of the enumeratable
+        condition_pool: pool of IV conditions to evaluate
+        num_samples: number of samples to select
+
+    Returns:
+        Sampled pool of conditions
 
     *Optional*
     Examples:
@@ -13,8 +22,8 @@ def example_sampler(pool: enumerate):
         1
         >>> example_sampler(range(3, 10))
         3
+
     """
-    try:
-        return next(iter(pool))
-    except (TypeError, StopIteration, IndexError):
-        return None
+    new_conditions = condition_pool
+
+    return new_conditions[:num_samples]
