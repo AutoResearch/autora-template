@@ -124,7 +124,7 @@ pip install -e ".[dev]"
 
 ### Step 7: Publish Your Package
 
-Once your project is implemented, you may publish it as subpackage of AutoRA. No worries though, in case you are 
+Once your project is implemented, you may publish it as subpackage of AutoRA. If you have not thoroughly vetted your project or would otherwise like to refine it further, you may 
 nervous about the state of your package–you will be able to publish it as a pre-release, indicating to users that
 the package is still in progress.
 
