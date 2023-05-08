@@ -25,8 +25,7 @@ pip install -e ".[dev]"
 
 ## Add your contribution 
 Your autora-subpackage should include (1) your code implementing in the respective folder of src/autora/*, 
-(2) **unit tests** for your contribution in the tests folder, and (3) respective **documentation**. (4) Update the README.md file
-(5) Delete all folders in src/autora that don't contain your contribution
+(2) **tests** for your contribution, and (3) respective **documentation**.
 
 ### Adding your code implementation
 Add your code implementation to src/autora/theorist, src/autora/experimentalist or src/autora/experiment_runner. You can create new categories if none of them seems fitting.
@@ -35,8 +34,12 @@ Add your code implementation to src/autora/theorist, src/autora/experimentalist 
 You should also add tests. These can be [doctests](https://docs.python.org/3/library/doctest.html) or as test cases in `tests/test_your_contribution_name.py`. 
 
 ### Adding documentation
+***Whenever possible stick to the templates provided to ensure coherent documentation***
 - You may document your contribution in `docs/index.md`. You can also add new pages in the `docs` folder
-- Update the `mkdocs.yml` file to reflect structure of the documentation. For example, you can add new pages or delete pages that you deleted from the `docs` folder.
+  - It is recommended to include at least a `index.md` file with an overview and a `quick-start.md` file, where the setup is explained.
+  - It is also very useful for users to include at least one example in form of a jupiter notebook. If you want to include a basic example, please use the basic-usage.ipynb file. You can add more examples (if possible, please replace the names of the additional-example to something more descriptive)
+- Update the `mkdocs.yml` file to reflect structure of the documentation. You can add additional pages and examples here.
+- Update the README.md file 
 
 ## Add new dependencies 
 
