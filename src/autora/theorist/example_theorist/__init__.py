@@ -1,5 +1,5 @@
 """
-Example Regressor
+Example Theorist
 """
 from sklearn.base import BaseEstimator
 
