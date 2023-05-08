@@ -6,7 +6,7 @@ repo_url: 'https://github.com/autoresearch/autora-template'
 
 nav:
 - Home: 'index.md'
-- Quickstart: 'quick_start_guide.md'
+- Quickstart: 'quick-start.md'
 - Examples:
-  - Basic Usage: 'basic_usage.ipynb'
-  - Additional Example: 'additional_example.ipynb'
+  - Basic Usage: 'basic-usage.ipynb'
+  - Additional Example: 'additional-example.ipynb'
