@@ -85,7 +85,7 @@ except for
 
 ### Step 3: Implement Your Code
 
-You may now add you a folder in the respective feature category. For instance, if you would like to implement
+You may now add a folder in the respective feature category. For instance, if you would like to implement
 and experimentalist sampler, then you may rename the subfolder ``example_sampler`` in 
 ``src/autora/experimentalist/sampler/`` and add your implementation of the sampler in the ``__init__.py`` file. You may 
 also add additional files in this folder. Just make sure to import the core function or class of your feature
