@@ -170,7 +170,7 @@ twine upload dist/*
 ```
 
 
-#### Step 7.3 (Optional):   Dynamic Versioning
+#### Step 7.3 (Optional): Dynamic Versioning
 To automatically generate the version number for each release, you can use dynamic versioning instead of updating the version number manually. To set this up, you need to alter the `pyproject.toml` file:
 - Replace `version = "..."` with `dynamic = ["version"]` under `project`
 - Replace the `build-system` section with the following:
