@@ -35,7 +35,7 @@ Contribution Guide).*
 
 First you have to choose **which type of feature** you would like to add to AutoRA. There are four categories of contributions:<br>
 
-(1)  **Theorist**: An sklearn regressors that returns an interpretable model relating experiment conditions $X$ to 
+(1)  **Theorist**: An sklearn regressor that returns an interpretable model relating experiment conditions $X$ to 
 observables $Y$.<br>
 *Example: The [Bayesian Machine Scientist](https://github.com/AutoResearch/autora-theorist-bms) (Guimerà et al., 2020, 
 in Science Advances) returns an equation governing the relationship between $X$ and $Y$.* <br>
