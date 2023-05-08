@@ -36,8 +36,8 @@ You should also add tests. These can be [doctests](https://docs.python.org/3/lib
 ### Adding documentation
 ***Whenever possible stick to the templates provided to ensure coherent documentation***
 - You may document your contribution in `docs/index.md`. You can also add new pages in the `docs` folder
-  - It is recommended to include at least a `index.md` file with an overview and a `quick_start_guide.md` file, where the setup is explained.
-  - It is also very useful for users to include at least one example in form of a jupiter notebook. If you want to include a basic example, please use the basic_usage.ipynb file. You can add more examples (if possible, please replace the names of the additional_example to something more descriptive)
+  - It is recommended to include at least a `index.md` file with an overview and a `quick-start.md` file, where the setup is explained.
+  - It is also very useful for users to include at least one example in form of a jupiter notebook. If you want to include a basic example, please use the basic-usage.ipynb file. You can add more examples (if possible, please replace the names of the additional-example to something more descriptive)
 - Update the `mkdocs.yml` file to reflect structure of the documentation. You can add additional pages and examples here.
 - Update the README.md file 
 
