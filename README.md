@@ -48,13 +48,20 @@ conditions $X'$ with respect to a pairwise distance metric applied to existing e
 <br>
 
 (3) **Experiment Runners**: A method that orchestrates the collecting of observations for a given set of 
-experiment conditions.<br>
+experiment conditions (this may include the recruitment of participants).<br>
 *Example: The [Firebase-Prolific Runner](https://github.com/AutoResearch/autora-experiment-runner-firebase-prolific) 
 enables the collection of behavioral data from human participants via web-based experiments hosted on 
 [Firebase](https://firebase.google.com/), using a pool of participants registered through
 [Prolific](https://www.prolific.co/).* <br>
+(3a) **Recruitment Manager**: A method (or collection of methods) to orchestrate the recruitment of participants.<br>
+*Example: The[Prolific Recruitment Manager](https://github.com/AutoResearch/autora-experiment-runner-recruitment-manager-prolific)
+enables the recruitment of participants via prolific.*<br>
+(3b) **Experimentation Manager**: A method (or collection of methods) to orchestrate the experimentation process.<br>
+*Example: The [Firebase Experimentation Manager](https://github.com/AutoResearch/autora-experiment-runner-experimentation-manager-firebase)
+enables the hosting of a web-based experiment on Firebase and the storage of conditions and observations via Firestore.*<br>
 
-(3) **Synthetic Data**: A ground-truth model that implements a hypothesized relationship between experimental conditions
+
+(4) **Synthetic Data**: A ground-truth model that implements a hypothesized relationship between experimental conditions
 $X$ and observations $Y$. Synthetic models may act as objects of study for which the underlying mechanisms are known, 
 and be used for benchmarking theorists and experimentalists in AutoRA in terms of
 their ability to recover the underlying model from synthetic data, e.g., by acting as "synthetic participants".
@@ -70,6 +77,8 @@ You may delete the following initialization files from the template:
 - Experimentalist (Pooler): ``src/autora/experimentalist/pooler/example_pooler/__init__.py``
 - Experimentalist (Sampler): ``src/autora/experimentalist/sampler/example_sampler/__init__.py``
 - Experiment Runner: ``src/autora/experiment_runner/example_runner/__init__.py``
+- Recruitment Manager: ``src/autora/experiment_runner/example_runner/recruitment_manager/__init__.py``
+- Experimentation Manager: ``src/autora/experiment_runner/example_runner/experimentation_manager/__init__.py``
 - Synthetic Data: ``src/autora/synthetic/example_data/__init__.py``
 
 In addition, you may delete the following test files from the template:
