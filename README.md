@@ -48,7 +48,7 @@ conditions $X'$ with respect to a pairwise distance metric applied to existing e
 <br>
 
 (3) **Experiment Runners**: A method that orchestrates the collecting of observations for a given set of 
-experiment conditions (this may include the recruitment of participants).<br>
+experiment conditions, which may include the recruitment of participants.<br>
 *Example: The [Firebase-Prolific Runner](https://github.com/AutoResearch/autora-experiment-runner-firebase-prolific) 
 enables the collection of behavioral data from human participants via web-based experiments hosted on 
 [Firebase](https://firebase.google.com/), using a pool of participants registered through
