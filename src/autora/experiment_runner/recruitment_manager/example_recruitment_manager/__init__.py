@@ -40,7 +40,7 @@ def pause_recruitment(args):
 def check_recruitment_status(args):
     """
     Add description here.
-    Get information on the status of rectuirment for a study on an example recruitment platform.
+    Get information on the status of recruitment for a study on an example recruitment platform.
     
     Args:
         the arguments needed to start the recruitment (e.g., credentials)
