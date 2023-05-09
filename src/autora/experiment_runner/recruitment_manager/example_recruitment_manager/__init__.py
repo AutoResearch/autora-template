@@ -19,7 +19,7 @@ def example_setup_recruitment(args):
 def start_recruitment(args):
     """
     Add description here.
-    Start the recruitment on an example recrruitment platform.
+    Start the recruitment on an example recruitment platform.
 
     Args:
         the arguments needed to start the recruitment (e.g., credentials)
