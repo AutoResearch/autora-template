@@ -9,11 +9,11 @@ def example_sampler(
     Add a description of the sampler here.
 
     Args:
-        condition_pool: pool of IV conditions to evaluate
-        num_samples: number of samples to select
+        condition_pool: pool of experiment conditions to evaluate
+        num_samples: number of experiment conditions to select
 
     Returns:
-        Sampled pool of conditions
+        Sampled pool of experiment conditions
 
     *Optional*
     Examples:
