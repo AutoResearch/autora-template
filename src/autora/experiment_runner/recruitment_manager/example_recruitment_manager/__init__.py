@@ -1,6 +1,6 @@
 """
 Example recruitment manager:
-    This is an example of functions that could be included 
+    These are example functions that could be included 
     (but are not necessarily included)
 """
 
