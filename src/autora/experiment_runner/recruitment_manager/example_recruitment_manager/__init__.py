@@ -5,30 +5,44 @@ Example recruitment manager:
 """
 
 
-def example_setup_experiment(args):
+def example_setup_recruitment(args):
     """
-    Add a description of the setup here
+    Add your description here.
+    Set up a study on an example recruitment platform.
+    
     Args:
-        the arguments needed to set up the experiment (e.g., credentials)
+        the arguments needed to set up the study (e.g., credentials)
     """
     pass
 
 
-def start_experiment(args):
+def start_recruitment(args):
     """
-    Add description here
+    Add description here.
+    Start the recruitment on an example recrruitment platform.
+
+    Args:
+        the arguments needed to start the recruitment (e.g., credentials)
     """
     pass
 
 
-def pause_experiment(args):
+def pause_recruitment(args):
     """
-    Add description here
+    Add description here.
+    Pause the recruitment on an example recruitment platform.
+
+    Args:
+        the arguments needed to start the recruitment (e.g., credentials)
     """
 
 
-def check_status(args):
+def check_recruitment_status(args):
     """
-    Add description here
+    Add description here.
+    Get information on the status of rectuirment for a study on an example recruitment platform.
+    
+    Args:
+        the arguments needed to start the recruitment (e.g., credentials)
     """
     pass
