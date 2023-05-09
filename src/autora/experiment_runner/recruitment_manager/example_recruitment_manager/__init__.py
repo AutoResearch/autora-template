@@ -9,7 +9,7 @@ def example_setup_experiment(args):
     """
     Add a description of the setup here
     Args:
-        the arguments needed to set up the experiment (for example credentials)
+        the arguments needed to set up the experiment (e.g., credentials)
     """
     pass
 
