@@ -54,7 +54,7 @@ enables the collection of behavioral data from human participants via web-based 
 [Firebase](https://firebase.google.com/), using a pool of participants registered through
 [Prolific](https://www.prolific.co/).* <br>
 
-(3) **Synthetic Data**: A ground-truth model that implements a hypothesized relationship between experimental conditions
+(4) **Synthetic Data**: A ground-truth model that implements a hypothesized relationship between experimental conditions
 $X$ and observations $Y$. Synthetic models may act as objects of study for which the underlying mechanisms are known, 
 and be used for benchmarking theorists and experimentalists in AutoRA in terms of
 their ability to recover the underlying model from synthetic data, e.g., by acting as "synthetic participants".
