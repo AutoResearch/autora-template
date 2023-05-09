@@ -23,8 +23,8 @@ class ExampleRegressor(BaseEstimator):
     def __init__(self):
         pass
 
-    def fit(self, x, y):
+    def fit(self, conditions, observations):
         pass
 
-    def predict(self, x):
+    def predict(self, conditions):
         pass
