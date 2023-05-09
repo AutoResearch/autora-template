@@ -55,7 +55,7 @@ enables the collection of behavioral data from human participants via web-based 
 [Prolific](https://www.prolific.co/).* <br>
 (3a) **Recruitment Manager**: A method (or collection of methods) to orchestrate the recruitment of participants.<br>
 *Example: The[Prolific Recruitment Manager](https://github.com/AutoResearch/autora-experiment-runner-recruitment-manager-prolific)
-enables the recruitment of participants via prolific.*<br>
+enables the recruitment of participants via Prolific.*<br>
 (3b) **Experimentation Manager**: A method (or collection of methods) to orchestrate the experimentation process.<br>
 *Example: The [Firebase Experimentation Manager](https://github.com/AutoResearch/autora-experiment-runner-experimentation-manager-firebase)
 enables the hosting of a web-based experiment on Firebase and the storage of conditions and observations via Firestore.*<br>
