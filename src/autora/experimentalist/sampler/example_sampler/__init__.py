@@ -2,9 +2,10 @@
 Example Experimentalist Sampler
 """
 import numpy as np
+from typing import Optional
 
 def example_sampler(
-    condition_pool: np.ndarray, num_samples: int = 1) -> np.ndarray:
+    condition_pool: np.ndarray, num_samples: Optional[int] = None) -> np.ndarray:
     """
     Add a description of the sampler here.
 
@@ -24,6 +25,9 @@ def example_sampler(
         3
 
     """
+    if num_samples is None:
+        num_samples = condition_pool.shape[0]
+
     new_conditions = condition_pool
 
     return new_conditions[:num_samples]
