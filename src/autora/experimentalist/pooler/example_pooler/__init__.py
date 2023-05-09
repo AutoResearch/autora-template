@@ -7,7 +7,7 @@ def example_pool(argument: float) -> float:
 
     Args:
         argument: description of the argument
-    Returns: pool of conditions
+    Returns: pool of experiment conditions
 
     *Optional*
     Examples:
