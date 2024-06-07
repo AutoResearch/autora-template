@@ -41,8 +41,7 @@ observations $Y$.<br>
 in Science Advances) returns an equation governing the relationship between $X$ and $Y$.* <br>
 
 (2)  **Experimentalist**: A method that identifies novel experiment conditions $X'$ that yield scientific merit. 
-Experimentalists may either be implemented as a *pooler* (generating a pool of novel experiment conditions) or as a 
-sampler (selecting from an existing pool of experiment conditions $X$).<br>
+Experiment conditions may be determined based on an existing pool of candidate conditions, based on the most recent model or other factors.<br>
 *Example: The [Novelty Sampler](https://github.com/AutoResearch/autora-novelty-sampler) selects novel experiment 
 conditions $X'$ with respect to a pairwise distance metric applied to existing experiment conditions $X$.*
 <br>
@@ -73,8 +72,7 @@ Depending on which feature you want to contribute, you can remove initialization
 You may delete the following initialization files from the template:
 
 - Theorist: ``src/autora/theorist/example_theorist/__init__.py``
-- Experimentalist (Pooler): ``src/autora/experimentalist/pooler/example_pooler/__init__.py``
-- Experimentalist (Sampler): ``src/autora/experimentalist/sampler/example_sampler/__init__.py``
+- Experimentalist: ``src/autora/experimentalist/example_experimentalist/__init__.py``
 - Experiment Runner: ``src/autora/experiment_runner/example_runner/__init__.py``
 - Recruitment Manager: ``src/autora/experiment_runner/example_runner/recruitment_manager/__init__.py``
 - Experimentation Manager: ``src/autora/experiment_runner/example_runner/experimentation_manager/__init__.py``
@@ -82,20 +80,19 @@ You may delete the following initialization files from the template:
 
 In addition, you may delete the following test files from the template:
 
-- Theorist: ``tests/test_theorist_example.py``
-- Experimentalist (Pooler): ``tests/test_experimentalist_pooler_example.py``
-- Experimentalist (Sampler): ``tests/test_experimentalist_sampler_example.py``
+- Theorist: ``tests/test_example_theorist.py``
+- Experimentalist: ``tests/test_example_experimentalist.py``
 
-For instance, if you would like to implement an experimentalist sampler, then you may remove all files listed above 
+For instance, if you would like to implement an experimentalist, then you may remove all files listed above 
 except for 
-- ``src/autora/experimentalist/sampler/example_sampler/__init__.py`` and 
-- ``tests/test_experimentalist_sampler_example.py``.
+- ``src/autora/experimentalist/example_experimentalist/__init__.py`` and 
+- ``tests/test_example_experimentalist.py``.
 
 ### Step 3: Implement Your Code
 
 You may now add a folder in the respective feature category. For instance, if you would like to implement
-and experimentalist sampler, then you may rename the subfolder ``example_sampler`` in 
-``src/autora/experimentalist/sampler/`` and add your implementation of the sampler in the ``__init__.py`` file. You may 
+and an experimentalist, then you may rename the subfolder ``example_experimentalist`` in 
+``src/autora/experimentalist/`` and add your implementation of the sampler in the ``__init__.py`` file. You may 
 also add additional files in this folder. Just make sure to import the core function or class of your feature
 in the ``__init__.py''' if it is implemented elswhere. 
 
